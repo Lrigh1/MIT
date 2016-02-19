@@ -1,0 +1,39 @@
+/*3.4.3 break
+Modify the code from 3.4.2 to let the user break out of the loop by entering -1 or any negative
+number. Before the program exits, output the string “Goodbye!”.
+------------------------------------------------------------------
+used break and goodbye message in if else */
+
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{	
+	
+	while(1)
+	{
+	int N;
+	cout << "Enter a number to see what it divided by 5 is\n";
+	cout << "Enter -1 or a negative number to exit\n";
+	cin >> N;
+
+		if(N >=0 & N % 5 == 0)
+		{
+		cout << N / 5 << endl; 
+		continue;
+		}
+
+		else if(N < 0)
+		{
+		cout << "Goodbye!\n";	
+		break;
+		}
+
+		else
+		{continue;}
+	}
+
+system("pause");
+}
