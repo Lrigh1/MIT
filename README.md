@@ -1,5 +1,5 @@
 # MIT
-MIT assignments
+MIT assignments and classes.
 
 
 Nothing to see here.
