@@ -1,0 +1,29 @@
+/*3.4.2 continue
+Modify the code from 3.4.1 so that if the condition fails, nothing is printed. Use an if and
+a continue command (instead of the ternary operator) to accomplish this.
+---------------------------------------------------------------------------*/
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{	
+	
+	while(1)
+	{
+	int N;
+	cout << "Enter a number to see what it divided by 5 is\n";
+	cin >> N;
+
+		if(N >=0 & N % 5 == 0)
+		{
+		cout << N / 5 << endl; 
+		continue;
+		}
+		else
+		{continue;}
+	}
+
+system("pause");
+}
