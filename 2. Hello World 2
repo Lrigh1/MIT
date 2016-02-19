@@ -1,0 +1,51 @@
+/*2.2 Hello World II
+Write a program that outputs “Hello, World!” n times (where n is a nonnegative integer
+that the user will input) with:
+• a for loop.
+• a while loop.
+• a do...while loop.
+---------------------------
+Hello World with loops.  Had to use multiple int variable to run them all, unlike python these loops changed the global i.
+experementing with this format, looks decent with colors in environment*/
+
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+const char* hello = "Hello, World";
+	//define the counter and get input for a number of loops
+	int i = 0;
+	int k =0;
+	int l =0;
+	int x;
+	cin >> x;
+
+	//for loop
+	//counter already defined
+	for(; i < x ; i++)
+	{
+	cout << hello << endl;
+	}
+	
+	//while loop
+	while (k < x)
+	{
+	cout << hello << endl;
+	k = k++;
+	}
+
+	//do- while loop
+	do
+	{
+	cout << hello << endl;
+	l = l++;
+	}
+	while (l < x);
+
+
+
+system("pause");
+}
