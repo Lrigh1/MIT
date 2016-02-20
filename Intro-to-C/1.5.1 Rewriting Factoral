@@ -1,0 +1,38 @@
+/*4.4 Rewriting Factorial
+Modify the given code such that negative inputs do not break the program and the smallest
+number that broke the program before now works. Do not hardcode answers
+-----------------------------------------------------------------
+Added code to get return 1 if input was less than 0 or more than 25*/
+
+
+#include <iostream >
+
+ using namespace std;
+
+ int main ()
+ {
+	short number ;
+	cout << " Enter a number : ";
+	cin >> number ;
+
+	if(number < 0)
+			{
+			cout << "Why you no enter real number?\n";
+			return 1;
+			}
+
+	if(number > 25)
+			{
+			cout << "Ah this number will break it. Too high\n";
+			return 1;
+			}
+
+	cout << "The factorial of " << number << " is ";
+
+	int accumulator = 1;
+
+	for (; number > 0; accumulator *= number --);
+			cout << accumulator << ".\n";
+
+ system("pause");
+ }
