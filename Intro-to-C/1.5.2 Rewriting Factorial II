@@ -1,0 +1,57 @@
+/*4.5 Rewriting Factorial II
+Since we know that only a small number of inputs produce valid outputs, we can alternatively
+hardcode the factorials of these inputs. Rewrite the program from the previous part
+(“Rewriting Factorial”) using a switch statement to demonstrate for inputs up to 10 how
+you would do this. (Of course, the code for inputs above 10 would basically be the same,
+but you do not need to go through the work of finding all those large factorials.)
+--------------------------------------------------------------------------------------------
+Needed a little help on this one, but understood near the end of finishing it up!*/
+
+
+#include <iostream >
+
+ using namespace std;
+
+ int main ()
+ {
+	short number ;
+	cout << " Enter a number : ";
+	cin >> number ;
+
+		switch(number)
+			{
+			case 0:
+			case 1:
+				cout << "1\n";
+				break;
+			case 2:
+				cout << "2\n";
+				break;
+			case 3:
+				cout << "6\n";
+				break;
+			case 4:
+				cout << "24\n";
+				break;
+			case 5:
+				cout << "120\n";
+				break;
+			case 7:
+				cout << " 5040\ n";
+				break ;
+			case 8:
+				cout << " 40320\ n";
+				break ;
+			case 9:
+				cout << " 362880\ n";
+				break ;
+			case 10:
+				cout << " 3628800\ n";
+				break ;
+			default:
+				cout <<"Input not supported!\n";
+				break;
+			}
+
+ system("pause");
+ }
