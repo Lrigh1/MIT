@@ -1,0 +1,23 @@
+/*Write a single sum function that returns the sum of two integers. Also write the equivalent
+function for taking the sum of two doubles. 
+--------------------------------------------------------------
+First function creation*/
+
+#include <iostream>
+
+using namespace std;
+
+//Makes sum function
+int sum(int a, int b)
+{
+	cout << a+b << endl;
+	return 0;
+}
+
+//executes sum function
+int main()
+{
+	sum(2,3);
+
+system ("pause");
+}
