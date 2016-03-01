@@ -1,0 +1,26 @@
+/*not really random*/
+
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main()
+{
+	int throws = 5;
+	int circleHits = 0;
+
+	for(int i = 0; i < throws; i++ )
+	{
+		double x = rand() / (double)RAND_MAX, y = rand() / (double)RAND_MAX;
+
+		if( sqrt(x*x + y*y) < 1)
+		  {
+		  circleHits++;
+		  }
+
+	}
+
+	cout << circleHits << endl;
+
+system("pause");
+}
